@@ -1,0 +1,179 @@
+@font-face {
+    font-family: super;
+    src: url(Fonts/SuperBoys-vmW67.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: foods;
+    src: url(Fonts/SuperFoods-2OxXo.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Text Colors */
+.green {color:#4caf50}
+.blue{color:#0099ff}
+.yellow{color:#FFD700}
+.orange{color:#ffa500}
+.white{color:#f4f4f4}
+.grey{color:#333333}
+.pink{color:#FF69B4}
+
+
+
+/* Image Effects */
+.rounded-corners {
+    border-radius: 10px;
+}
+.image-shadow {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Effects */
+.base-font {
+    font-family: 'super', sans-serif;
+}
+.easy-font {
+    font-family: 'foods', sans-serif;
+}
+.bold-effect {
+    font-weight: bold;
+}
+.italic-effect {
+    font-style: italic;
+}
+.shadow-effect {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.center-text {
+    text-align: center;
+}
+.space-between {
+    letter-spacing: 2px;
+}
+.space-after {
+    margin-bottom: 100px;
+}
+.space-before {
+    margin-top: 100px;
+}
+.review-textbox {
+    width: 50%
+}
+.about-textbox{
+    width: 70%; /* Set the desired width */
+    margin: 0 auto; /* Auto margin for horizontal centering */
+    text-align: center; /* Center-align the text within the width */
+    background-color: #0099ff; /* Optional background color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+/* Triple Columns */
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 15px; /* Spacing between columns */
+}
+
+/* Double Columns */
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three equal columns */
+    gap: 15px; /* Spacing between columns */
+}
+
+
+/* Resetting some default styles for a cleaner look */
+ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color:#0099ff; /* Dark background for navbar */
+}
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;         /* Display list items in a row */
+    justify-content: space-around; /* Distribute space evenly between list items */
+    align-items: center;
+}
+.navbar li {
+    padding: 15px 20px;    /* Add padding for each list item */
+}
+.navbar a {
+    color:#FFD700;          /* Text color for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none;
+}
+.navbar a:hover {
+    color:#eeca00;        
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    color: #ffd700;
+    background-color: #0099ff; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; /* Button hand cursor */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+.button:hover {
+    background-color: #005ac7; /* Darker green on hover */
+}
+
+.small-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    color: white;
+    background-color: #0099ff; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; /* Button hand cursor */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+.small-button:hover {
+    background-color: #005ac7; /* Darker green on hover */
+}
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column-review {
+    flex: 1; /* Each column takes up equal space */
+    padding: 0 10px; /* Optional padding */
+    background-color: #0099ff; /* Example gray background color */
+    margin: 10px; /* Optional spacing between columns */
+    border-radius: 10px;
+}

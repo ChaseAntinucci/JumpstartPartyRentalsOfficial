@@ -1,0 +1,28 @@
+@keyframes twistShake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+    65% { transform: rotate(-2deg); }
+    80% { transform: rotate(2deg); }
+    90% { transform: rotate(-1deg);}
+    100% { transform: rotate(1deg);}
+}
+.twist-shake-on-hover:hover {
+    animation: twistShake 0.5s ;
+}
+
+
+.pulsing-text {
+    font-size: 24px;
+    text-align: center;
+    font-family: super, sans-serif;
+    animation: pulseAnimation 6s ease-in-out infinite; 
+}
+
+@keyframes pulseAnimation {
+    0% {transform:rotate(1deg) scale(1.02);}
+    25% {transform:rotate(-1deg) scale(1.04);}
+    50% {transform:rotate(1deg) scale(1.02);}
+    75% {transform:rotate(-1deg) scale(1);}
+    100% {transform:rotate(1deg) scale(1.02);}
+}
